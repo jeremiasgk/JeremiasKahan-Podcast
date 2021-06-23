@@ -1,0 +1,554 @@
+    #toggle-menu{
+        display: none;
+    }    
+
+@media only screen and (max-width: 1099px) {
+    .topbar{
+        height: 100%;
+        min-height:40px;
+        width: 100%;
+    }
+
+    .icono{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+    }
+
+    .boton{
+        margin: 0;
+        display: inline-block;
+        position: absolute;        
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 10px;
+    }
+    .boton span:first-child{
+        margin-top: 12px;
+    }
+    
+    .boton span{
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin: 4px 10px 0 10px;
+    }
+    
+    #menu{
+        margin: 0;
+        display: none;
+        background: #0000EC;
+        padding: 10px;
+        position: relative;
+    }
+    
+    #menu li{
+        list-style: none;
+        position: relative;
+        width: 100%;
+    }
+    
+    #menu li a{
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 3vw;
+        font-family: IBM PLEX MONO;
+        font-size: 16px;
+        line-height: 3rem;
+    }
+    
+    #toggle-menu:checked ~ #menu {
+        display: block;
+    }
+
+    #toggle-menu:checked + .barra > label > span:nth-child(1){
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    #toggle-menu:checked + .barra > label > span:nth-child(2){
+        opacity: 0;
+    }
+
+    #toggle-menu:checked + .barra > label > span:nth-child(3){
+        transform: rotate(45deg) translate(-4px, -4px);
+    }
+
+    .hiddensmall{
+        display: none;
+    }
+}
+
+/*------------------------menu--------------*/
+
+body{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2{
+    font-family: IBM PLEX SANS;
+    font-size: 36px;
+    padding: 0 5vw 0 5vw;
+    font-weight: lighter;
+}
+
+h3{
+    font-family: IBM PLEX MONO;
+    font-size: 24px;
+    font-weight: bold;
+    color: #060A24;
+}
+
+p{
+    font-family: IBM PLEX MONO;
+    font-size: 14px;
+    padding: 0 5vw 0 5vw;
+    color: #060A24;
+}
+
+.helloworld h1{
+    width: 80vw;
+}
+
+.helloworld p{
+    width: 90vw;
+}
+
+.boton1, .boton2{
+    text-align: center;
+    padding: 10% 0 10% 0;
+}
+
+.btnmenta1{
+    background-color: #00F3BB;
+    text-decoration: none;
+    border: none;
+    font-family: 'IBM PLEX MONO', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;  
+    text-align: center;   
+    padding: 14px 28% 14px 28%;
+    color: #000000;
+    cursor: pointer;
+}
+.btnmenta2{
+    background-color: #00F3BB;
+    text-decoration: none;
+    border: none;
+    font-family: 'IBM PLEX MONO', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 48px;
+    cursor: pointer;
+    text-transform: uppercase;  
+    text-align: center;   
+    padding: 14px 10% 14px 10%;
+    color: #000000;
+    cursor: pointer; 
+}
+
+.iconos-redes i{
+    color: black;
+}
+
+
+@media only screen and (max-width: 1099px){
+    .episodios{
+        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+        background-image: linear-gradient( #0000FF, #0000A3);
+        color: #ffffff;
+        padding-top: 10%;
+        padding-bottom: 40%;
+    }
+
+    .podcast-container{
+        text-align: center;
+    }
+
+    .iframe{
+        width: 100%;  
+        height: 232px;  
+        border: 0px;                   
+        background-color: transparent;
+    }
+
+    .podcast-container div iframe{
+        width: 90%;
+        height: 232px;
+        border: 0px;
+    }
+    
+    .imgmobile img{
+        position: relative;
+        width: 100%;
+        margin-top: -30%;
+    }
+    
+    #indice2, #indice3, #indice4{
+        margin-bottom: 1vh;
+        width: 80%;
+    }
+    
+    .contenedor-venimos{
+        margin-bottom: 4em;
+    }
+    
+    .contenedor-imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4em;
+    }
+    
+    .contenedor-imagenes img{
+        width: 100%;
+    }
+    
+    .iconos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    
+    .iconunit{
+        text-align: center;
+        width: 288px;
+    }
+    
+    .iconos img{
+        padding-top: 10%;
+    }
+
+   .novedades-contenedor{
+    margin: 0;
+    text-align: center;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    background-image: linear-gradient( #0000FF, #0000A3);
+    color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    }
+    
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 8em;
+    }
+    
+    .copyright p{
+        text-align: center;
+        margin: 0%;
+    }
+    
+    .iconos-redes{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+/* -----------------------------DESKTOP SETTINGS------------------------------- */
+
+@media only screen and (min-width: 1100px){
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        min-height:80px;
+        width: 100%;
+    }
+
+    #menu {
+        margin: 0 5vw 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+   
+    #menu li a{
+        color:#060A24;
+        text-decoration: none;
+        font-family: IBM PLEX MONO;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    
+    #menu li a:hover{
+        color:#00F3BB;
+        text-decoration: line-through;
+    }
+
+    #menu li a:active{
+        color:#060A24 56%;
+        text-decoration: line-through;
+    }
+
+    .icono{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 50px;
+        margin: 0;
+        padding: 0 0 0 5vw;
+    }
+
+    .icono img{
+        height: 36px;
+        width: 36px;
+    }
+
+
+ /* -------------------NAVBAR----------------------- */
+
+    body{
+        background-color: #ffffff;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    h1, h2{
+        margin: 0;
+        font-family: IBM PLEX SANS;
+        font-size: 48px;
+        padding: 0 5vw 0 15vw;
+        font-weight: lighter;
+    }
+    
+    h3{
+        font-family: IBM PLEX MONO;
+        font-size: 24px;
+        font-weight: bold;
+        color: #060A24;
+    }
+    
+    p{
+        font-family: IBM PLEX MONO;
+        font-size: 16px;
+        padding: 0 5vw 0 15vw;
+        margin-top: 0;
+        line-height: 1.5rem;
+        color: #060A24;
+    }
+
+    #indice2{
+        font-size: 48px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #indice2, #indice3, #indice4{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .hiddenbig{
+        display: none;
+    }
+
+    .helloworld{
+        margin-top: 15vh;
+    }
+
+    .helloworld h1{
+        padding-right: 0;
+        width: 80vw;
+        font-size: 64px;
+    }
+
+    .helloworld p{
+        padding-top: 0;
+        width: 628px;
+    }
+    
+    #dot{
+        color: #0000EC;
+    }
+
+    .boton1{
+        text-align: left;
+        padding: 5vh 5vw 1vh 15vw;
+    }
+
+    .boton2{
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+
+    .btnmenta1{   
+        padding: 18px 66px 18px 66px;
+    }
+    
+    .btnmenta2{  
+        padding: 18px 72px 18px 72px;
+    }
+
+    .btnmenta1:hover, .btnmenta2:hover{
+        background-image: linear-gradient(to right, #00F0B8, #0000FE);
+        color: #ffffff;
+    }
+    
+    .episodios{
+        -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+        clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+        background-image: linear-gradient(to left, #0000FF, #0000A3);
+        color: #ffffff;
+        padding: 20vh 0 20vh 0;
+        height: 700px;
+    }
+
+    .episodios h2 {
+        padding: 5vh 5vw 0 15vw;
+    }
+
+    .podcast-container{
+        display: grid;
+        grid-template-columns: 6.9% auto 5% auto 6.9% ;
+        grid-template-rows: 5% auto 8% auto 5%;
+        margin: 0 0 5vh 0;
+        height: 50%;
+    }
+    
+    .iframe-grid1{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .iframe-grid2{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .iframe-grid3{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .iframe-grid4{
+        grid-column: 4/5;
+        grid-row: 4/5;
+    }
+
+    .iframe{
+        width: 100%;  
+        height: 232px;  
+        border: 0px;                   
+        background-color: transparent;
+    }
+
+    .podcast-container div iframe{
+        width: 100%;
+        height: 232px;
+        border: 0px;
+    }
+
+    .celuytexto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .imgmobile{
+        text-align: center;
+    }
+
+    .imgmobile img{
+        height: 660px;
+        transform: translateY(-140px);
+    }
+
+    .contenedor-venimos{
+        margin: 0;
+        padding: 0  ;
+        width: 50%;
+    }
+
+    .contenedor-venimos p{
+        padding: 0;
+        margin: 0   ;
+    }
+
+    .contenedor-imagenes{
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 4em;
+    }
+
+    .contenedor-imagenes img{
+        width: 33.3%;
+    }
+
+    .iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    
+    .iconunit{
+        text-align: center;
+        width: 288px;
+        height: 250px;
+    }
+    
+    .iconos img{
+        padding-top: 10%;
+    }
+
+    .novedades-contenedor{
+        margin: 0;
+        text-align: center;
+        clip-path: polygon(0% 20vh, 100% 0%, 100% 100%, 0% 100%);
+        background-image: linear-gradient(to left, #0000FF, #0000A3);
+        color: #ffffff;
+        padding: 20vh 0 20vh 0;
+    }
+
+    .novedades-contenedor h2{
+        padding: 10vh 0 4vh 0;
+    }
+
+    .boton2 a {
+        width: 345px;  
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 5em;
+    }
+
+    .copyright div{
+        margin: 0 5vw 0 5vw;
+    }
+    
+    .copyright p{
+        text-align: center;
+        margin: 0%;
+        padding: 0;
+    }
+    
+    .iconos-redes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 15rem;
+    }
+}
